@@ -1,3 +1,11 @@
+/*
+	Bronze stored procedure for loading the data from source to bronze layer
+	The source here are .CSV files 
+	This stored procedure first truncates the existing tables and then loads the data from the external csv files
+	It uses the BULK INSERT command to load the data 
+	This stored procedure doesnot takes any parameters
+	Usage example- EXEC bronze.load_bronze
+*/
 
 CREATE OR ALTER PROCEDURE bronze.load_bronze AS
 BEGIN
