@@ -1,3 +1,9 @@
+/*
+DDL QUERY- Create Bronze layer tables
+purpose: This script creates the bronze layer schema tables and drops and recreates them if they already exist.
+Run this script to redefine the tables in bronze schema
+*/
+
 IF OBJECT_ID('bronze.crm_cust_info','U') IS NOT NULL
 	DROP TABLE bronze.crm_cust_info;
 CREATE TABLE bronze.crm_cust_info(
