@@ -1,4 +1,10 @@
-
+/*
+	Silver stored procedure for loading the data from Bronze to Silver layer.
+	This scripts performs the ETL process to populate the silver tables.
+	This stored procedure first truncates the existing tables and then transforms the data and then loads the data from the bronze layer.
+	This stored procedure doesnot takes any parameters
+	Usage example- EXEC silver.load_silver
+*/
 
 CREATE OR ALTER PROCEDURE silver.load_silver AS
 BEGIN
